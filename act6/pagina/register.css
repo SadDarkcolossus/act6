@@ -1,0 +1,98 @@
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para el logo */
+.logo img {
+    max-width: 100px;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+/* Estilos para el register */
+.register {
+    width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.boton {
+    display: flex;
+}
+/* Estilos para el enlace de inicio de sesión */
+.enlace {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.enlace a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.enlace a:hover {
+    color: #000;
+}
