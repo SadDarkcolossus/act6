@@ -14,14 +14,18 @@
             <img src="perfil.png" alt="Logo de la Tienda">
         </div>
 
+        <!-- Botón de hamburguesa -->
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
         <nav>
             <ul>
                 <li><a href="main.html">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Contacto</a></li>
-                <i><a href="login.html"><i class="fa-solid fa-user" style="color: #000000;"></i></i>
-                
+                <i><a href="login.html"><i class="fa-solid fa-user" style="color: #000000;"></i></i>  
             </ul>
         </nav>
     </header>
@@ -29,4 +33,15 @@
     <!-- El contenido de tu tienda va aquí -->
 
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var navToggle = document.querySelector('.nav-toggle');
+    var nav = document.querySelector('nav ul');
+
+    navToggle.addEventListener('click', function() {
+        nav.classList.toggle('nav-hide');
+    });
+});
+</script>
 </html>
