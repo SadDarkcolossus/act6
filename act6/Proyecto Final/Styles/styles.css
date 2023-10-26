@@ -1,0 +1,136 @@
+/* styles.css */
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para el logo */
+.logo img {
+    max-width: 100px;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* Estilo para el menú de hamburguesa */
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    /* Mostrar el menú cuando el botón de hamburguesa está activo */
+    .nav-toggle.active + .menu ul {
+        display: flex;
+    }
+
+    .nav-toggle{
+        top: 5%;
+        right:5%;
+        font-size: 24px;
+        line-height: 24px;
+        
+    }
+
+    .menu{
+        position: fixed;
+        right: 0; /* Esto posicionará el menú en la parte derecha de la pantalla */
+        top: 1; /* Otra propiedad que puede ser útil si quieres que el menú esté en la parte superior de la pantalla */
+        background-color: #f0f0f0;
+        width: 100px; /* Puedes ajustar el ancho según tus necesidades */
+        padding: 7px;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+        align-items: center;
+       
+    }
+    .menu ul li {
+        float: left; /* Esto alineará los elementos de la lista a la izquierda */
+        /* Otros estilos de tus elementos li aquí */
+    }
+}
+
+/* Estilo para la animación de rebote */
+.logo img.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Ajusta la altura del rebote según tus preferencias */
+    }
+}
+
+/* Estilos para la animación de desplazamiento al centro */
+@keyframes slideToCenter {
+    0% {
+        transform: translateX(50vw) translateY(25vw);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.center-animation {
+    animation: slideToCenter 2s ease-in-out forwards;
+}
